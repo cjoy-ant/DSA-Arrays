@@ -4,7 +4,8 @@ const Array = require("./array");
 // const maxSum = require("./maxSum");
 // const Merge = require('./merge')
 // const removeChar = require("./removeChar");
-const Products = require("./products");
+// const Products = require("./products");
+const twoDArray = require('./twoDArray')
 
 const main = () => {
   Array.SIZE_RATIO = 3;
@@ -36,7 +37,12 @@ const main = () => {
   // console.log("largest sum: " + maxSum([4, 6, -3, 5, -2, 1]));
   // console.log("merged array: " + Merge([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]))
   // console.log("remove characters: " + removeChar("hello world", "eo"))
-  console.log("products: " + Products([1, 3, 9, 4]));
+  // console.log("products: " + Products([1, 3, 9, 4]));
+  console.log(twoDArray([[1,0,1,1,0],
+    [0,1,1,1,0],
+    [1,1,1,1,1],
+    [1,0,1,1,1],
+    [1,1,1,1,1]]))
 };
 
 module.exports = main;
