@@ -2,7 +2,8 @@ const Array = require("./array");
 // const URLifyString = require("./URLifyString");
 // const Filter = require("./filter");
 // const maxSum = require("./maxSum");
-const Merge = require('./merge')
+// const Merge = require('./merge')
+const removeChar = require("./removeChar");
 
 const main = () => {
   Array.SIZE_RATIO = 3;
@@ -32,7 +33,8 @@ const main = () => {
   // console.log(URLifyString("www.helloworld.com/ hello world"));
   // console.log(Filter([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5));
   // console.log("largest sum: " + maxSum([4, 6, -3, 5, -2, 1]));
-  console.log("merged array: " + Merge([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]))
+  // console.log("merged array: " + Merge([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]))
+  console.log("remove characters: " + removeChar("hello world", "eo"))
 };
 
 module.exports = main;
