@@ -1,7 +1,7 @@
 const Array = require('./array')
 const URLifyString = require('./URLifyString')
 
-function main() {
+const  main = () => {
   Array.SIZE_RATIO = 3;
 
   // Create an instance of the Array class
@@ -28,6 +28,7 @@ function main() {
   // "Nan" -- not a number, it is a string
   // in Memory, using Float64Array, values are stored as numbers
   console.log(URLifyString("www.helloworld.com/ hello world"))
+  console.log(Filter([1,2,3,4,5,6,7,8,9,10], 5))
 }
 
 module.exports = main

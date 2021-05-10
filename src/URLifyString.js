@@ -1,4 +1,4 @@
-function URLifyString(value) {
+const URLifyString = (value) => {
   const string = value.split("");
   const URLstring = string.map((item) => {
     if (item === " ") {
